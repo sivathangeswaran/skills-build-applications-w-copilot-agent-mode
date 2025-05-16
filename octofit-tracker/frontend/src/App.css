@@ -1,0 +1,113 @@
+/* App.css for OctoFit Tracker */
+/* App.css for OctoFit Tracker */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e0e7ff 100%);
+  margin: 0;
+  padding: 0;
+  color: #22223b;
+}
+
+.App {
+  text-align: center;
+}
+
+nav.navbar {
+  background: linear-gradient(90deg, #4682b4 0%, #6a82fb 100%);
+  box-shadow: 0 4px 12px rgba(70, 130, 180, 0.15);
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 12px;
+}
+
+.navbar-nav .nav-link {
+  color: #e0e7ff !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+  color: #ffd166 !important;
+  text-decoration: underline;
+}
+
+h1, h2 {
+  color: #22223b;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.table {
+  width: 90%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  background: linear-gradient(90deg, #fff 60%, #e0e7ff 100%);
+  box-shadow: 0 4px 12px rgba(70, 130, 180, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  border: 1px solid #bfc9e0;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.table th {
+  background: linear-gradient(90deg, #4682b4 60%, #6a82fb 100%);
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+.table tr:hover {
+  background-color: #ffd16633;
+}
+
+.card {
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(70, 130, 180, 0.10);
+}
+
+button, .btn {
+  background: linear-gradient(90deg, #4682b4 0%, #6a82fb 100%);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #ffd166 0%, #6a82fb 100%);
+  color: #22223b;
+}
+
+a {
+  color: #4682b4;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #ffd166;
+  text-decoration: underline;
+}

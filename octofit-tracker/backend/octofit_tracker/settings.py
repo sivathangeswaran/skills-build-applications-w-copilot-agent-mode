@@ -27,7 +27,7 @@ DEBUG = True
 
 
 # Allow all hosts and codespace URL
-ALLOWED_HOSTS = ['*', 'localhost', '127.0.0.1', 'fluffy-space-tribble-9w76r5rpg7cw6g-8000.app.github.dev']
+ALLOWED_HOSTS = ['*', 'localhost', '127.0.0.1', 'fluffy-space-tribble-9w76r5rpg7cw6g-8000.app.github.dev', 'fluffy-space-tribble-9w76r5rpg7cw6g-3000.app.github.dev']
 
 
 # Application definition
