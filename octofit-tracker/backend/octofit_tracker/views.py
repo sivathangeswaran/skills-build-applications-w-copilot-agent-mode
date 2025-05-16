@@ -9,7 +9,11 @@ def api_root(request, format=None):
     if request.method == 'POST':
         return Response({"message": "POST request received"}, status=status.HTTP_201_CREATED)
 
-    base_url = 'http://localhost:8000/'
+    # Use the codespace URL if available, otherwise fallback to localhost
+    codespace_url = 'https://fluffy-space-tribble-9w76r5rpg7cw6g-8000.app.github.dev/'
+    local_url = 'http://localhost:8000/'
+    # Optionally, you could detect the host from the request
+    base_url = codespace_url if 'app.github.dev' in request.get_host() else local_url
     return Response({
         'users': base_url + 'api/users/?format=api',
         'teams': base_url + 'api/teams/?format=api',
